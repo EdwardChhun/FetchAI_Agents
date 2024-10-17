@@ -1,0 +1,11 @@
+from uagents import Agent, Context
+
+# For the seeds, create a .env file where I can store different agent addresses
+agent = Agent(name="alice", seed="secret_seed_phrase")
+
+@agent.on_event("startup")
+async def introduce_agent(ctx: Context):
+    ctx.logger.info(f"Hello, I'm agent {agent.name} and my address is {agent.address}.")
+ 
+if __name__ == "__main__":
+    agent.run()

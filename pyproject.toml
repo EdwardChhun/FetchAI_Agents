@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "aiagenttest"
+version = "0.1.0"
+description = ""
+authors = ["Edward Chhun <edwardchhun3@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = ">=3.12,<3.13"
+uagents = "^0.16.2"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
